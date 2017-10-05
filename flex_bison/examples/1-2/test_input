@@ -1,0 +1,4 @@
+The following word should print color: colour.
+The following word should print flavor: flavour.
+Everything else prints verbatim.
+The interesting thing about this example is that the flex file does not have a third (C Code) section. When such a thing happens, patterns matched execute actions described and that's it.
