@@ -1,0 +1,14 @@
+The following is a list of nodes with their structure:
+	1) NMax: (has no anchor token)
+		+) NSimple
+	2) NSimple [This node does not exist is just a conceptual one to aid in successor line transitivity (see appended note)]: (has no anchor token)
+		|)
+			1) NSummation
+			2) NLiteral
+			3) NDuplicate
+	3) NSummation: (anchor token corresponds to left square bracket of summation list)
+		+) NMax
+	4) NDuplicate: (anchor token corresponds to asterisk )
+		1) NSimple
+	5) NLiteral: (literal in lexeme of anchor token)
+Note: If numbered, order is assumed; if quantified unorder is assumed unless quantifier is preceded by o. Also if a node of type a can have a child of type b, and a node of type b can have a child of type c, nodes of type a can have children of type c (successor line is transitive).
